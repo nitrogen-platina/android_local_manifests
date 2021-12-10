@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<!--Remote/-->
+	<remote name="platina" fetch="https://github.com/nitrogen-platina" />
+	<remote name="d4rk" fetch="https://github.com/D4rkKnight21" />
+	<remote name="DHMPT" fetch="https://github.com/DHAMPOT" />
+	<remote name="gf" fetch="https://github.com/greenforce-project" />
+	
+	<!--Repo Device/-->
+	<project path="device/xiaomi/platina" name="android_device_xiaomi_platina" remote="platina" revision="nos" />
+	<project path="device/xiaomi/sdm660-common" name="device_xiaomi_sdm660-common" remote="DHMPT" revision="lineage-18.1" />
+	<project path="kernel/xiaomi/sdm660" name="kernel_xiaomi_platina" remote="DHMPT" revision="perf" clone-depth="1" />
+	<project path="vendor/xiaomi/platina" name="vendor_xiaomi_platina" remote="DHMPT" revision="11" clone-depth="1" />
+	<project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="DHMPT" revision="aosp" />
+	
+	<!--Custom/-->
+	<remove-project name="android_framework_base" path="framework/base"/>
+	<project path="framework/base" name="android_framework_base" remote="platina" revision="11" clone-depth="1" />
+	<remove-project name="android_vendor_nitrogen" path="vendor/nitrogen" />
+	<project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="platina" revision="11" clone-depth="1" />
+	
+	<!--GCC/-->
+	<project path="prebuilts/gcc/linux-x86/arm/arm-eabi" name="gcc-arm32" remote="gf" revision="main" clone-depth="1" />
+	<project path="prebuilts/gcc/linux-x86/aarch64/aarch64-elf" name="gcc-arm64" remote="gf" revision="main" clone-depth="1" />
+
+</manifest>
