@@ -14,8 +14,8 @@
 	<project path="vendor/xiaomi/sdm660-common" name="vendor_xiaomi_sdm660-common" remote="DHMPT" revision="aosp" />
 	
 	<!--Custom/-->
-	<remove-project name="android_framework_base" path="framework/base"/>
-	<project path="framework/base" name="android_framework_base" remote="platina" revision="11" clone-depth="1" />
+	<remove-project name="android_frameworks_base" path="frameworks/base"/>
+	<project path="frameworks/base" name="android_frameworks_base" remote="platina" revision="11" clone-depth="1" />
 	<remove-project name="android_vendor_nitrogen" path="vendor/nitrogen" />
 	<project path="vendor/nitrogen" name="android_vendor_nitrogen" remote="platina" revision="11" clone-depth="1" />
 	
